@@ -1,0 +1,418 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Header */
+header {
+  background: #009c4a;
+  color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+/* Logo image sizing */
+.logo-img {
+  height: 45px;       /* Adjust this value smaller or larger */
+  width: auto;        /* Keeps proportions */
+  margin-right: 10px; /* Adds a small gap between logo and text */
+}
+/* Group image and text side by side */
+.logo-group {
+  display: flex;
+  align-items: center;   /* vertically center logo and text */
+  gap: 10px;             /* small space between image and text */
+}
+header {
+  padding: 8px 0;     /* Reduced from 15px */
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #3861f5;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(10, 35, 66, 0.7), rgba(10, 35, 66, 0.7)),
+              url(pics/photoshop\ background\ w1.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #009c4a;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+.btn {
+  background: #f4c542;
+  color: #0a2342;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn:hover {
+  background: #fff;
+}
+
+/* Section */
+.section {
+  padding: 60px 0;
+}
+.section.light {
+  background: #d5e8d7;
+}
+.section h2 {
+  text-align: center;
+  color: #0a2342;
+  margin-bottom: 30px;
+}
+.section p {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: #555;
+}
+
+/*mission & vission*/
+#mission-vision {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 60px 0;
+}
+
+#mission-vision h2 {
+  color: #0a2342;
+  margin-bottom: 20px;
+}
+
+#mission-vision hr {
+  width: 60px;
+  height: 3px;
+  background-color: #009c4a;
+  border: none;
+  margin: 0 auto 30px;
+  border-radius: 3px;
+}
+
+#mission-vision h3 {
+  color: #009c4a;
+  margin-bottom: 15px;
+}
+
+#mission-vision p {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+#mission-vision ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#mission-vision ul li {
+  margin-bottom: 10px;
+  padding-left: 1.2em;
+  position: relative;
+  color: #333;
+}
+
+#mission-vision ul li::before {
+  content: "•";
+  color: #009c4a;
+  position: absolute;
+  left: 0;
+}
+
+
+/* Grid & Cards */
+.grid {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;   /* make each card fill width */
+  gap: 1.5rem;            /* space between cards */
+  width: 100%;
+}
+.card {
+  width: 90%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
+  border: 2px solid 	#00d062;
+  box-shadow:  0 4px 10px #058743;
+}
+
+#services .card h3 {
+  color: #0a2342;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 30px; /*moves heading left*/
+}
+#services .card i {
+  color: #009c4a;          /* match your theme */
+  font-size: 3rem;
+  margin-left: 25px;
+}
+
+/* Bullet points inside cards, styled like Mission & Vision */
+.card ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 30px; /* aligns with h3/paragraph */
+}
+
+.card ul li {
+  margin-bottom: 10px;
+  padding-left: 1.2em;
+  position: relative;
+  color: #333;
+}
+
+.card ul li::before {
+  content: "•";
+  color: #009c4a; /* green bullet to match Mission & Vision */
+  position: absolute;
+  left: 0;
+}
+/* Specific styling for paragraph in the service cards */
+#services h3 {
+  margin-left: 30px; /* shift heading slightly right */
+  display: inline-block;
+  vertical-align: middle;
+  color: #0a2342;
+}
+#services h4 {
+  margin-left: 30px;
+}
+
+#services p {
+  margin-left: 30px; /* align paragraph with h3 */
+  max-width: 750px;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Team */
+.team-grid {
+  text-align: center;
+}
+.team-member img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  display: block;       /* makes it respect margin auto */
+  margin: 0 auto;       /* centers horizontally */
+  max-width: 100%;      /* responsive sizing */
+  height: auto; 
+}
+.team-member h3 {
+  color: #0a2342;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.team-member .card i {
+  font-size: 20px; /* adjust icon size */
+  color: #009c4a;
+  margin-bottom: 15px;
+}
+.team-member .card a {
+  font-size: 20px; /* adjust icon size */
+  color: #009c4a;
+  margin-bottom: 15px;
+}
+.team-member .card h4 {
+  margin-left: 30px; /* shift heading slightly right */
+  display: inline-block;
+  vertical-align: middle;
+  color: #0a2342;}
+
+/* Contact */
+#contact p {
+  margin: 8px 0;
+  text-align: center;
+}
+/* Contact Section Centering */
+#contact .card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact .card i {
+  font-size: 40px; /* adjust icon size */
+  color: #009c4a;
+  margin-bottom: 15px;
+}
+
+#contact .card h3 {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #0a2342;
+}
+
+#contact .card p {
+  text-align: center;
+  margin-bottom: 8px;
+  color: #333;
+}
+#contact .card a {
+  color: #009c4a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact .card a:hover {
+  color: #3861f5;
+}
+
+/* Footer */
+footer {
+  background: 	#009c4a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+/* Tablets and smaller laptops */
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 80px 15px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 95%;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  header img {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 8px;
+  }
+
+  .hero {
+    padding: 60px 10px;
+    font-size: 0.95rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding: 40px 10px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .team-member img {
+    width: 80%;
+  }
+
+  footer h2 {
+    font-size: 1.1rem;
+  }
+
+  footer p {
+    font-size: 0.85rem;
+  }
+}
+/* Center and align better on small screens */
+@media (max-width: 600px) {
+  .logo-img {
+    height: 35px; /* smaller for mobile */
+  }
+}
