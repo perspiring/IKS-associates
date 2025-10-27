@@ -397,7 +397,9 @@ footer {
     width: 100%;
     padding: 20px;
   }
-
+  #services p{
+    text-align:left;
+  }
   .team-member img {
     width: 80%;
   }
@@ -415,4 +417,5 @@ footer {
   .logo-img {
     height: 35px; /* smaller for mobile */
   }
+
 }
