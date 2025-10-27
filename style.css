@@ -414,18 +414,32 @@ footer {
 }
 /* Center and align better on small screens */
 @media (max-width: 600px) {
-  .logo-img {
-    height: 35px; /* smaller for mobile */
+  header .container {
+    flex-direction: column;      /* stack logo and nav */
+    align-items: center;         /* center them */
+    justify-content: center;
+    gap: 5px;                    /* reduce spacing between logo and heading */
+    padding: 5px 0;              /* tighten vertical padding */
   }
 
-/* Logo image sizing */
-.logo-img {
-  margin-right: 1px; /* Adds a small gap between logo and text */
+  .logo-group {
+    flex-direction: column;      /* stack image and text vertically */
+    align-items: center;         /* center both */
+    gap: 4px;                    /* smaller gap between logo image and name */
+  }
+
+  .logo-img {
+    height: 40px;                /* slightly smaller logo */
+    margin: 0;
+  }
+
+  .logo {
+    font-size: 1rem;             /* slightly smaller text */
+    margin: 0;
+    text-align: center;
+    line-height: 1.2;
+  }
 }
-/* Group image and text side by side */
-.logo-group {
-  gap: 1px;             /* small space between image and text */
-}
-}
+
 
 
